@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="icon" href="../assets/LOGO__2_-removebg-preview.png">
+  <title>Machine Cripto</title>
+</head>
+
+<body>
+  <main class="mainmain">
+    <nav class="navbar navbar-dark fixed-top" style="background-color: #272727;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img class="logo_machine" src="../assets/logo.machinecrip.png"
+            alt="Logo Machine Cripto"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header" style="background-color: #272727; color: #f6f6f6;">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" style="background-color: #272727; color: #f6f6f6;">
+            <ul class="navbar-nav justify-content-end pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html" style="color: #f6f6f6;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #f6f6f6;">Entre ou Cadastre-se</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false" style="color: #f6f6f6;">
+                  Mais
+                </a>
+                <ul class="dropdown-menu" style="background-color: #272727;">
+                  <li><a class="dropdown-item" href="./indexDois.html" style="color: #f6f6f6;">Sobre Nós</a></li>
+                  <li><a class="dropdown-item" href="./Termos.html" style="color: #f6f6f6;">Termos de uso</a></li>
+                  <li>
+                    <hr class="dropdown-divider" style="background-color: #f6f6f6;">
+                  </li>
+                  <li><a class="dropdown-item" href="#" style="color: #f6f6f6;">Atendimento ao cliente</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="O que você procura?" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="sessaoLoguin">
+      <div class="campodeLoguin">
+        <form class="form">
+          <div class="flex-column">
+            <label for="fullName">Nome Completo</label>
+            <input id="fullName" placeholder="Nome Completo" class="input" type="text" required>
+          </div>
+
+          <div class="flex-column">
+            <label for="socialName">Nome Social</label>
+            <input id="socialName" placeholder="Nome Social" class="input" type="text" required>
+          </div>
+          <div class="flex-column">
+            <label for="phone">Telefone</label>
+            <input id="phone" placeholder="Telefone" class="input" type="tel" required>
+          </div>
+          <div class="flex-column">
+            <label for="password">CEP</label>
+            <input id="cep" placeholder="0000000" class="input" type="number" required>
+          </div>
+          <div class="flex-column">
+            <label for="renda">Renda</label>
+            <select id="renda" class="select-input" required>
+              <option value="" disabled selected>Selecione sua renda</option>
+              <option value="0-1000">0 - R$1000</option>
+              <option value="1001-3000">R$1001 - R$3000</option>
+              <option value="3001-5000">R$3001 - R$5000</option>
+              <option value="5001-10000">R$5001 - R$10000</option>
+              <option value="10000+">Acima de R$10000</option>
+            </select>
+          </div>
+          <div class="flex-column">
+            <div class="flex-column">
+              <label>Você possui ativos em criptomoedas?</label>
+        <br>
+<label class="custom-checkbox"> Sim
+  <input name="dummy" type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="custom-checkbox"> Não
+  <input name="dummy" type="checkbox">
+  <span class="checkmark"></span>
+</label> 
+          </div>
+          <div class="flex-column">
+            <label for="renda">Se você respondeu 'Sim', qual a porcentagem do seu capital que você investiu em criptomoedas?</label>
+            <select id="renda" class="select-input" required>
+              <option value="" disabled selected>%</option>
+              <option value="0-1000">0 - 25%</option>
+              <option value="1001-3000">25% - 50%</option>
+              <option value="3001-5000">50% - 75%</option>
+              <option value="5001-10000">100%</option>
+              
+            </select>
+          </div>
+          <div>
+            <div class="flex-column">
+              <label for="email">Email</label>
+              <input id="email" placeholder="Exemplo.com@gmail.com" class="input" type="email" required>
+            </div>
+            <div class="flex-column">
+              <label for="password">Senha</label>
+              <input id="password" placeholder="*******" class="input" type="password" required>
+            </div>
+
+            <div class="flex-column">
+              <label for="confirmPassword">Confirmar Senha</label>
+              <input id="confirmPassword" placeholder="*******" class="input" type="password" required>
+            </div>
+
+            <div class="flex-row">
+              <div>
+                <input type="radio">
+                <label>Lembrar Acesso</label>
+              </div>
+
+            </div>
+            <button type="submit" class="button-submit">Solicitar</button>
+            <p class="p">Já possui uma conta? <span class="span"><a class="solicitar" href="./criarConta.html"> Entre
+                  agora!</a></span></p>
+            <p class="p line">Ou faça sua solicitação com</p>
+            <div class="flex-row">
+              <button type="button" class="btn google">
+                <svg xml:space="preserve" style="enable-background:new 0 0 512 512;" viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg" id="Layer_1" width="20" version="1.1">
+                  <path
+                    d="M113.47,309.408L95.648,375.94l-65.139,1.378C11.042,341.211,0,299.9,0,256c0-42.451,10.324-82.483,28.624-117.732h0.014l57.992,10.632l25.404,57.644c-5.317,15.501-8.215,32.141-8.215,49.456C103.821,274.792,107.225,292.797,113.47,309.408z"
+                    style="fill:#FBBB00;"></path>
+                  <path
+                    d="M507.527,208.176C510.467,223.662,512,239.655,512,256c0,18.328-1.927,36.206-5.598,53.451c-12.462,58.683-45.025,109.925-90.134,146.187l-0.014-0.014l-73.044-3.727l-10.338-64.535c29.932-17.554,53.324-45.025,65.646-77.911h-136.89V208.176h138.887L507.527,208.176L507.527,208.176z"
+                    style="fill:#518EF8;"></path>
+                  <path
+                    d="M416.253,455.624l0.014,0.014C372.396,490.901,316.666,512,256,512c-97.491,0-182.252-54.491-225.491-134.681l82.961-67.91c21.619,57.698,77.278,98.771,142.53,98.771c28.047,0,54.323-7.582,76.87-20.818L416.253,455.624z"
+                    style="fill:#28B446;"></path>
+                  <path
+                    d="M419.404,58.936l-82.933,67.896c-23.335-14.586-50.919-23.012-80.471-23.012c-66.729,0-123.429,42.957-143.965,102.724l-83.397-68.276h-0.014C71.23,56.123,157.06,0,256,0C318.115,0,375.068,22.126,419.404,58.936z"
+                    style="fill:#F14336;"></path>
+                </svg>
+                Google
+              </button>
+              <button type="button" class="btn apple">
+                <svg xml:space="preserve" style="enable-background:new 0 0 22.773 22.773;" viewBox="0 0 22.773 22.773"
+                  xmlns="http://www.w3.org/2000/svg" id="Capa_1" width="20" height="20" version="1.1">
+                  <g>
+                    <g>
+                      <path
+                        d="M15.769,0c0.053,0,0.106,0,0.162,0c0.13,1.606-0.483,2.806-1.228,3.675c-0.731,0.863-1.732,1.7-3.351,1.573c-0.108-1.583,0.506-2.694,1.25-3.561C13.292,0.879,14.557,0.16,15.769,0z">
+                      </path>
+                      <path
+                        d="M20.67,16.716c0,0.016,0,0.03,0,0.045c-0.455,1.378-1.104,2.559-1.896,3.655c-0.723,0.995-1.609,2.334-3.191,2.334c-1.367,0-2.275-0.879-3.676-0.903c-1.482-0.024-2.297,0.735-3.652,0.926c-0.155,0-0.31,0-0.462,0c-0.995-0.144-1.798-0.932-2.383-1.642c-1.725-2.098-3.058-4.808-3.306-8.276c0-0.34,0-0.679,0-1.019c0.105-2.482,1.311-4.5,2.914-5.478c0.846-0.52,2.009-0.963,3.304-0.765c0.555,0.086,1.122,0.276,1.619,0.464c0.471,0.181,1.06,0.502,1.618,0.485c0.378-0.011,0.754-0.208,1.135-0.347c1.116-0.403,2.21-0.865,3.652-0.648c1.733,0.262,2.963,1.032,3.723,2.22c-1.466,0.933-2.625,2.339-2.427,4.74C17.818,14.688,19.086,15.964,20.67,16.716z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+                Apple
+              </button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <div>
+    <footer class="rodape">
+      <p>Todos os direitos reservados ©️ Machine Cripto</p>
+    </footer>
+  </div>
+  <script src="../server.js"></script>
+</body>
+
+</html>
