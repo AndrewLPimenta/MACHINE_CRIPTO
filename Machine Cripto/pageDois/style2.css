@@ -1,0 +1,758 @@
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+
+}
+
+.principal {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.paginCartao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    gap: 1rem;
+}
+
+header {
+    width: 100%;
+    color: #fff;
+}
+
+.logo_machine {
+    width: 80px;
+    height: 80px;
+}
+
+.text-copy {
+    margin: 0 auto;
+    align-items: center;
+    text-align: justify;
+    font-size: 4vh;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.card h5{
+    color: #cb9604;
+}
+
+.card2 h5{
+    color: #565656;
+}
+
+.card3 h5{
+    color: #01cbb0;
+}
+
+h5{
+    font-size: 5vh;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+div.card {
+    margin-top: 1rem;
+    display: flex;
+    /* Ativa o Flexbox */
+    flex-direction: column;
+    /* Garante que os itens fiquem lado a lado */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+    background-color: #fff;
+    padding: 1rem;
+    gap: 2rem;
+    border-radius: 3rem;
+    max-width: 90%;
+    /* Limita a largura máxima para ser responsivo */
+    margin: 5rem auto;
+    /* Centraliza com auto e reduz a margem */
+    border: 5px solid #0000;
+    border-radius: 3rem;
+    background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(var(--angle),
+            #ffffff,
+            #ffdd02,
+            #fcce00) border-box;
+    animation: 4s rotate linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+
+div.card2 {
+    margin-top: 1rem;
+    display: flex;
+    /* Ativa o Flexbox */
+    flex-direction: column;
+    /* Garante que os itens fiquem lado a lado */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+    background-color: #fff;
+    padding: 1rem;
+    gap: 2rem;
+    border-radius: 3rem;
+    max-width: 90%;
+    /* Limita a largura máxima para ser responsivo */
+    margin: 5rem auto;
+    /* Centraliza com auto e reduz a margem */
+    border: 5px solid #0000;
+    border-radius: 3rem;
+    background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(var(--angle),
+            #ffffff,
+            #6d6d6d,
+            #3d3d3d9a) border-box;
+    animation: 4s rotate linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+
+div.card3 {
+    margin-top: 1rem;
+    display: flex;
+    /* Ativa o Flexbox */
+    flex-direction: column;
+    /* Garante que os itens fiquem lado a lado */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+    background-color: #fff;
+    padding: 1rem;
+    gap: 2rem;
+    border-radius: 3rem;
+    max-width: 90%;
+    /* Limita a largura máxima para ser responsivo */
+    margin: 5rem auto;
+    /* Centraliza com auto e reduz a margem */
+    border: 5px solid #0000;
+    border-radius: 3rem;
+    background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(var(--angle),
+            #ffffff,
+            #37f8db,
+            #03beedfb) border-box;
+    animation: 4s rotate linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.flip-card {
+    margin: 0 auto;
+    background-color: transparent;
+    width: 240px;
+    height: 154px;
+    perspective: 2000px;
+    color: rgb(0, 0, 0);
+}
+
+.heading_8264 {
+    position: absolute;
+    font-size: 1em;
+    top: 0.75em;
+    left: 1em;
+    font-weight: 600;
+    text-shadow: -0.2px -0.2px 0.2px rgb(0, 0, 0), 0.2px -0.2px 0.2px gray,
+        -0.2px 0.2px 0.2px white, 0.2px 0.2px 0.2px gray;
+}
+
+.logo {
+    position: absolute;
+    top: 6.8em;
+    left: 11.7em;
+}
+
+.chip {
+    position: absolute;
+    top: 2.3em;
+    left: 1.5em;
+}
+
+.contactless {
+    position: absolute;
+    top: 3.5em;
+    left: 12.4em;
+}
+
+.number {
+    position: absolute;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.75em;
+    top: 7em;
+    left: 1.5em;
+}
+
+.date_8264 {
+    position: absolute;
+    font-weight: 600;
+    font-size: 0.75em;
+    top: 9em;
+    left: 1.5em;
+    letter-spacing: 2px;
+}
+
+.cvc_number {
+    position: absolute;
+    font-weight: 600;
+    font-size: 0.75em;
+    top: 9em;
+    left: 8.5em;
+    letter-spacing: 2px;
+}
+
+.cvc {
+    position: absolute;
+    font-weight: 600;
+    font-size: 5px;
+    top: 6.9rem;
+    left: 8rem;
+}
+
+.exp {
+    position: absolute;
+    font-weight: 600;
+    font-size: 5px;
+    top: 6.9rem;
+    left: 3.8rem;
+}
+
+.name {
+    position: absolute;
+    font-weight: 400;
+    font-size: 8.5px;
+    top: 15em;
+    left: 2em;
+    color: #000000;
+}
+
+.strip {
+    position: absolute;
+    background-color: white;
+    width: 15em;
+    height: 2.25em;
+    top: 0;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+}
+
+.flip-card-front {
+    background: linear-gradient(135deg, #fad51efe, hsl(53, 83%, 86%), #ffbb00);
+    border: 1px solid rgb(252, 217, 42);
+}
+
+.flip-card-back {
+    background: linear-gradient(135deg, #f5cc00fe, hsl(54, 84%, 85%), #ffbb00);
+    transform: rotateY(180deg);
+}
+
+
+
+.flip-card2 {
+    margin: 0 auto;
+    background-color: transparent;
+    width: 240px;
+    height: 154px;
+    perspective: 1000px;
+    color: rgb(0, 0, 0);
+}
+
+.heading_82642 {
+    position: absolute;
+    font-size: 1em;
+    top: 0.75em;
+    left: 1em;
+    font-weight: 600;
+    text-shadow: -0.2px -0.2px 0.2px white, 0.2px -0.2px 0.2px gray,
+        -0.2px 0.2px 0.2px white, 0.2px 0.2px 0.2px gray;
+}
+
+.logo2 {
+    position: absolute;
+    top: 6.8em;
+    left: 11.7em;
+}
+
+.chip2 {
+    position: absolute;
+    top: 2.3em;
+    left: 1.5em;
+}
+
+.contactless2 {
+    position: absolute;
+    top: 3.5em;
+    left: 12.4em;
+}
+
+.number2 {
+    position: absolute;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.75em;
+    top: 7em;
+    left: 1.5em;
+}
+
+.date_82642 {
+    position: absolute;
+    font-weight: 600;
+    font-size: 0.75em;
+    top: 9em;
+    left: 1.5em;
+    letter-spacing: 2px;
+}
+
+.cvc_number2 {
+    position: absolute;
+    font-weight: 600;
+    font-size: 0.75em;
+    top: 9em;
+    left: 8.5em;
+    letter-spacing: 2px;
+}
+
+.cvc2 {
+    position: absolute;
+    font-weight: 600;
+    font-size: 5px;
+    top: 6.9rem;
+    left: 8rem;
+}
+
+.exp2 {
+    position: absolute;
+    font-weight: 600;
+    font-size: 5px;
+    top: 6.9rem;
+    left: 3.8rem;
+}
+
+.name2 {
+    position: absolute;
+    font-weight: 400;
+    font-size: 8.5px;
+    top: 15em;
+    left: 2em;
+    color: #000000;
+}
+
+.strip2 {
+    position: absolute;
+    background-color: white;
+    width: 15em;
+    height: 2.25em;
+    top: 0;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.flip-card-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card2:hover .flip-card-inner2 {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front2,
+.flip-card-back2 {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+}
+
+.flip-card-front2 {
+    background: linear-gradient(135deg, #9b9b9b, #D9D9D9, #b3b2b2);
+    border: 1px solid rgb(136, 136, 136);
+}
+
+.flip-card-back2 {
+    background: linear-gradient(135deg, #9b9b9b, #D9D9D9, #b3b2b2);
+    transform: rotateY(180deg);
+}
+
+
+
+
+.flip-card3 {
+    margin: 0 auto;
+    background-color: transparent;
+    width: 240px;
+    height: 154px;
+    perspective: 1000px;
+    color: rgb(0, 0, 0);
+}
+
+.heading_82643 {
+    position: absolute;
+    font-size: 1em;
+    top: 0.75em;
+    left: 1em;
+    font-weight: 600;
+    text-shadow: -0.2px -0.2px 0.2px white, 0.2px -0.2px 0.2px gray,
+        -0.2px 0.2px 0.2px white, 0.2px 0.2px 0.2px gray;
+}
+
+.logo3 {
+    position: absolute;
+    top: 6.8em;
+    left: 11.7em;
+}
+
+.chip3 {
+    position: absolute;
+    top: 2.3em;
+    left: 1.5em;
+}
+
+.contactless3 {
+    position: absolute;
+    top: 3.5em;
+    left: 12.4em;
+}
+
+.number3 {
+    position: absolute;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.75em;
+    top: 7em;
+    left: 1.5em;
+}
+
+.date_82643 {
+    position: absolute;
+    font-weight: 600;
+    font-size: 0.75em;
+    top: 9em;
+    left: 1.5em;
+    letter-spacing: 2px;
+}
+
+.cvc_number3 {
+    position: absolute;
+    font-weight: 600;
+    font-size: 0.75em;
+    top: 9em;
+    left: 8.5em;
+    letter-spacing: 2px;
+}
+
+.cvc3 {
+    position: absolute;
+    font-weight: 600;
+    font-size: 5px;
+    top: 6.9rem;
+    left: 8rem;
+}
+
+.exp3 {
+    position: absolute;
+    font-weight: 600;
+    font-size: 5px;
+    top: 6.9rem;
+    left: 3.8rem;
+}
+
+.name3 {
+    position: absolute;
+    font-weight: 400;
+    font-size: 8.5px;
+    top: 15em;
+    left: 2em;
+    color: #000000;
+}
+
+.strip3 {
+    position: absolute;
+    background-color: white;
+    width: 15em;
+    height: 2.25em;
+    top: 0;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.flip-card-inner3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card3:hover .flip-card-inner3 {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front3,
+.flip-card-back3 {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+}
+
+.flip-card-front3 {
+    background: linear-gradient(135deg, #7efcfc, #dbffff, #08efec);
+    border: 1px solid rgb(88, 252, 222);
+}
+
+.flip-card-back3 {
+    background: linear-gradient(135deg, #7efcfc, #dbffff, #08efec);
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
+.containerr {
+    display: flex;
+    align-items: center;
+    /* Alinha verticalmente ao centro */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    flex-wrap: wrap;
+    /* Permite que o conteúdo se ajuste em telas menores */
+    margin: 0 auto;
+    /* Centraliza o container na página */
+    padding: 4rem;
+    width: 100%;
+    height: 100%;
+    --s: 260px;
+    --c1: #b2b2b2;
+    --c2: #ffffff;
+    --c3: #d9d9d9;
+  
+    --_g: var(--c3) 0 120deg, #0000 0;
+    background: conic-gradient(from -60deg at 50% calc(100% / 3), var(--_g)),
+      conic-gradient(from 120deg at 50% calc(200% / 3), var(--_g)),
+      conic-gradient(from 60deg at calc(200% / 3),
+        var(--c3) 60deg,
+        var(--c2) 0 120deg,
+        #0000 0),
+      conic-gradient(from 180deg at calc(100% / 3), var(--c1) 60deg, var(--_g)),
+      linear-gradient(90deg,
+        var(--c1) calc(100% / 6),
+        var(--c2) 0 50%,
+        var(--c1) 0 calc(500% / 6),
+        var(--c2) 0);
+    background-size: calc(1.732 * var(--s)) var(--s);
+  }
+
+
+  
+.button {
+    text-decoration: none;
+    position: relative;
+    display: inline-flex;
+    height: 3.5rem;
+    align-items: center;
+    border-radius: 9999px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: Segoe UI;
+    font-size: 1.2rem;
+    font-weight: 640;
+    color: #000000;
+    letter-spacing: -0.06em;
+  }
+  
+  .button-item {
+    background-color: transparent;
+    color: #010101;
+  }
+  
+  .button-item .button-bg {
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(232, 197, 0);
+  }
+  
+  .button-inner,
+  .button-inner-hover,
+  .button-inner-static {
+    pointer-events: none;
+    display: block;
+  }
+  
+  .button-inner {
+    position: relative;
+  }
+  
+  .button-inner-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  
+  .button-bg {
+    overflow: hidden;
+    border-radius: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: transform 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .button-bg,
+  .button-bg-layer,
+  .button-bg-layers {
+    display: block;
+  }
+  
+  .button-bg-layers {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -60%;
+    aspect-ratio: 1 / 1;
+    width: max(200%, 10rem);
+  }
+  
+  .button-bg-layer {
+    border-radius: 9999px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+  }
+  
+  .button-bg-layer.-purple {
+    background-color: rgb(110, 110, 110);
+  }
+  
+  .button-bg-layer.-turquoise {
+    background-color: rgb(0, 183, 183);
+  }
+  
+  .button-bg-layer.-yellow {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 208, 116, var(--tw-bg-opacity));
+  }
+  
+  .button:hover .button-inner-static {
+    opacity: 0;
+    transform: translateY(-70%);
+    transition:
+      transform 1.4s cubic-bezier(0.19, 1, 0.22, 1),
+      opacity 0.3s linear;
+  }
+  
+  .button:hover .button-inner-hover {
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+      transform 1.4s cubic-bezier(0.19, 1, 0.22, 1),
+      opacity 1.4s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .button:hover .button-bg-layer {
+    transition:
+      transform 1.3s cubic-bezier(0.19, 1, 0.22, 1),
+      opacity 0.3s linear;
+  }
+  
+  .button:hover .button-bg-layer-1 {
+    transform: scale(1);
+  }
+  
+  .button:hover .button-bg-layer-2 {
+    transition-delay: 0.1s;
+    transform: scale(1);
+  }
+  
+  .button:hover .button-bg-layer-3 {
+    transition-delay: 0.2s;
+    transform: scale(1);
+  }
